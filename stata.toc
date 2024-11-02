@@ -1,0 +1,8 @@
+v 1.0
+d Materials by Dean Parker
+d NYU Stern School of Business
+d dap527@stern.nyu.edu
+
+d 'twoway_pbar': Patterned bar charts
+
+p twoway_pbar

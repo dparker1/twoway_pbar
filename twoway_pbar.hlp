@@ -1,0 +1,72 @@
+{smcl}
+{* 02Nov2024*}{...}
+{vieweralsosee "[G-2] graph twoway bar" "mansection G-2 graphtwowaybar"}{...}
+{vieweralsosee "" "--"}{...}
+{vieweralsosee "[G-2] graph bar" "help graph_bar"}{...}
+{viewerjumpto "Syntax" "twoway_pbar##syntax"}{...}
+{viewerjumpto "Description" "twoway_pbar##description"}{...}
+{viewerjumpto "Options" "twoway_pbar##options"}{...}
+{viewerjumpto "Examples" "twoway_pbar##examples"}{...}
+{p2colset 9 30 32 2}
+{p2col :{cmd:graph twoway pbar} {hline 2}}Twoway patterned bar plots{p_end}
+{p2colreset}{...}
+
+
+{marker syntax}{...}
+{title:Syntax}
+
+{p 8 53 2}
+{cmdab:tw:oway}
+{cmd:pbar}
+{it:yvar} {it:xvar}
+{ifin}
+[{cmd:,}
+{it:options}]
+
+{synoptset 25}{...}
+{p2col:{it:options}}Description{p_end}
+{p2line}
+{p2col:{cmd:pattern(}{it:pattern_name}{cmd:)}}fill pattern; default is pattern10 (solid){p_end}
+
+{p2col:{help twoway_bar:{it:twoway_bar_options}}}twoway bar options{p_end}
+{p2line}
+
+{marker description}{...}
+{title:Description}
+
+{p 4 4 2}
+This command is a modified version of the {cmd:twoway bar} command that allows the use of patterned fills. Inspired and based on code by Sergiy Radyakin's package {browse "http://fmwww.bc.edu/RePEc/bocode/t/twoway_parea":twoway parea}
+
+{marker options}{...}
+{title:Options}
+
+{p 4 4 2}
+{cmd:pattern({it:pattern_name})}
+    specifies the pattern used for filling the bars. Possible values are: {it:pattern1}, {it:pattern2},..., {it:pattern10}, {it:background}, and {it:none}. Value {it:pattern10} is the default value and corresponds to a solid fill. 
+	Value {it:background} corresponds to the graph background color. 
+	Value {it:none} makes the fill transparent.
+
+{marker examples}{...}
+{title:Examples}
+
+{p 4 4 2}
+{cmd: . sysuse pop2000}}
+
+{p 4 4 2}
+{cmd: . twoway pbar white agegrp, pattern(pattern8)}
+
+{p 4 4 2}
+{cmd: . twoway (pbar white agegrp, pattern(pattern8)) (pbar black agegrp, pattern(pattern5))}
+
+{p 4 4 2}
+{cmd: . twoway (pbar white agegrp, pattern(pattern8)) (pbar black agegrp, pattern(none))}
+
+
+{title:Author}
+
+        Dean Parker, NYU Stern School of Business, {browse "mailto:dap527@stern.nyu.edu":dap527@stern.nyu.edu}
+
+{title:Versions}
+
+	November 2024: First version
+

@@ -1,0 +1,14 @@
+v 1.0
+d 'TWOWAY_PBAR': twoway_pbar
+d 
+d Patterned bar charts
+d 
+d Distribution-Date:   20241102
+d License: MIT
+d 
+F pbar_g.class
+F pbarkey_g.class
+F twoway_pbar.hlp
+F twoway_pbar_parse.class
+F yxtype-pbar.style
+F yxview_pbar_draw.ado
