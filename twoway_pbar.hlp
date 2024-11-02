@@ -50,7 +50,7 @@ This command is a modified version of the {cmd:twoway bar} command that allows t
 {title:Examples}
 
 {p 4 4 2}
-{cmd: . sysuse pop2000}}
+{cmd: . sysuse pop2000}
 
 {p 4 4 2}
 {cmd: . twoway pbar white agegrp, pattern(pattern8)}
